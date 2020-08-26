@@ -1,0 +1,16 @@
+AddToFront : List1 ( 1 nodes):    1
+AddToFront : List1 ( 2 nodes):    1   1
+AddToFront : List1 ( 3 nodes):    1   1   1
+AddToFront : List1 ( 4 nodes):    1   1   1   1
+Find       : Value 2 was not found in List1.
+Find       : Value 1 was found in List1.
+Delete     : List1 ( 4 nodes):    1   1   1   1
+Delete     : List1 ( 3 nodes):    1   1   1
+Delete     : List2 ( 0 nodes): 
+Delete     : List2 ( 0 nodes): 
+Insert     : List1 ( 4 nodes):   20   1   1   1
+Insert     : List1 ( 5 nodes):   20   1   1   1  20
+Insert     : List2 ( 1 nodes):   30
+Concatenate: 
+List1 ( 6 nodes):   20   1   1   1  20  30
+List2 ( 0 nodes): 

@@ -1,0 +1,229 @@
+Wang Ao
+4 x leaks
+failed 2 x hidden test case -4
+insert to a position before 0 will cause a segfault
+in function Find redundant use of the if statement at line 183 since if it reaches there, the if statement already satisfies -1
+redundant use of else statement in line 186 since it can never reach there.-1
+in function Delete if it is the first node it will not delete but instead cause a mem leak.-3
+in function Insert inserting to a position before 0 will cause a segfault
+author param is empty in the file header
+
+
+Benjamin Julian M. Larin
+failed test cases 2, 4, 5 both gnu & ms
+failed 2 hidden test cases
+insert to a position before 0 will add to end
+file header states assignment 1, but this is lab 2
+in function Delete, dont have to use keyword struct when instantiating ptr of a struct in c++.
+in function insert, when node is added to postion 0 (front) should call AddToFront, your implementation of it makes it that when there is an empty list it will not insert.
+Likewise when it is supposed to insert ar end, use AddToEnd.
+in function Concat, if list 1 is empty will cause a seg fault, since line 260 will cause it.
+
+
+Jiang Chuqiao
+failed test case 0 for both gnu & ms
+in function Insert, will add to end when position is 1
+will insert elsewhere when position is less than 0
+calling MakeNode at the start while also calling AddToFront or AddToEnd will cause a memory leak
+1 x leak
+failed 4 hidden test cases
+
+Chue Jun Hao
+failed 2 hidden test cases
+insert to a position before 0 will add to end
+
+Andy Chan
+failed 2 test cases
+insert to a position before 0 will cause a seg fault
+
+
+
+Chan Mun Leng Nicolette
+4 x leak
+failed 2 hidden test cases
+insert to a position before 0 will cause a seg fault
+
+
+Chan Wai Kit Terence
+failed 2 hidden test cases
+insert to a position before 0 will add elsewhere
+
+Chan Yong Ching Claudia
+no header for given fns
+1 x leak
+failed 2 hidden test cases
+insert to a position before 0 will cause a seg fault
+
+Chen Zhen Yuan
+no header for some given fns
+1 x leak
+insert to a position before 0 will add elsewhere
+
+Samuel Chee
+makefile ms wrong .exe name - 5
+deallocation error why didn't you use the given fn to FreeList? -20
+messy indentation
+insert to a position before 0 will add to end
+
+Damian Chee Tai Ming
+failed 2 hidden test cases
+insert to a position before 0 will add elsewhere
+one line above 90 at line 235, doxygen brief somewhat lenghty.
+
+Teo Chin Ming
+failed 2 hidden testcases
+insert to a position before 0 will add elsewhere
+delete the value 0 will cause a seg fault
+unique function header
+
+David Sathguru
+in fn Insert, when the postion is 0 why didnt you just call the add to front?
+failed 2 test cases.
+will cause infinite loop when insert before 0
+what if the position is below zero? shouldnt it just return, in doing so will result in mem leak since memory was already allocated before the if checks
+one line above 80.
+
+Favian Goh
+3 x leak
+makefile.gnu fails // wrong compile line, wrong .exe name, not out.exe 
+makefile.ms fails  // wrong .exe name, not out.exe,  line 22 generating obj error
+failed 2 hidden test cases
+insert at position before 0 will insert elsewhere.
+in function Insert, calling MakeNode at the start and calling AddToEnd right after will cause mem leak
+
+Toh Gim Hsiang
+failed 2 hidden test cases
+insert at position before 0 will insert elsewhere.
+Note: nice commenting, keep up the good work
+
+Chong Huey Jia
+incomplete brief, This is a.....
+makefile.ms and makefile.gnu failed to compile out.exe
+no assignment checklist
+infinite loop on 1.in, 4.in, 5.in, all hidden test cases
+In function insert, calling MakeNode at the start and using AddToFront will cause memory leak
+In function insert if position is 0 or lower will cause inf loop. RMB else is always paired to closest if statement
+In function Find, return nullptr would be more appopriate, please read the forums.
+additional file makefile.microsoft
+
+Tan I-hur
+makefile.ms & gnu failed to create out.exe //wrong command line omit the 5.2.0 -20
+compile failure on ms // potentially uninitialized variable before on line 178 and after                        -50
+passed 2 test cases, failed the rest // in function insert, do note that 0 is the front of thelist not 1        -15
+in function Find, will cause segfault if used on empty list, since you cant dereferance a nullptr.              -5
+in function delete, did not shift the dangling ptr to a nullptr after delete.                
+note:
+do not fave to include your doxyfile in the submission, just the index.chm file as per stated in the brief. (no deductions for this assignment, but there will be for the next)
+
+Chloe Lim Jia-Han
+makefile.ms made main.exe, as per guidelines supposed to get out.exe
+passed all test case and all hidden test case
+in function concat would result in memory leak, did not call free list on list2 after
+suggestion would to be not use makenode at all in this fn, and instead just shift the pointers.
+4xleak.
+
+James Chin Jia Jun
+both makefile.gnu & makefile.ms do not have out directory 
+nice degree you are pursuing, never heard of it.
+other than that good job, you seem to have grasp the different edge cases possible.
+
+Ng Jia Yi
+4xleaks
+in function Concat, repeatedly calling AddToEnd while not deleteing the node will result in leak
+in function Delete, if the first Node would be deleted, will cause a leak.
+in function Insert, if position is below 0 it would get a segfault.
+failed 2 hidden test case.
+
+Tan Jo Shin
+makefile.ms failed to compile //EHsc flag not used
+should just submit the index.chm file not the whole folder, please read the submission guidelines
+in function Find, continue in line 137 is redundant, no deductions this time, but there will be for the next
+3xleak
+in function Delete, not deleting the node but ignoring it will result in memory leak
+in function Insert, calling MakeNode and subsequently calling AddToFront or AddToEnd depending on the condition will result in memory leak
+in function Insert, if the position is below 0, it will cause a seg fault
+failed 2x hidden test case
+
+Bryan Lim Jun Han
+failed 2x hidden test case
+in function Insert, adding to a position below 0 would result in AddToEnd.
+
+
+Lau Jan Wei, Joshua
+wrong folder name, do check before submitting
+makefile.ms fail to compile, no /EHsc flag used
+failed 3xtest cases
+7xleak
+in Function Delete, if first node to be deleted, will lose all node location which will result in leak aswell
+failed 3 hidden test cases
+In function Insert, will cause segfault is position is less than 0.
+
+Amir Rafie
+in function Delete, will have undefined behavior since you deleted your *pList and left it as a wild pointer ( line 208)
+changing to *pList = dNode->next will resolve the problem. 
+in doing so will result in infinite loops and memory leaks.
+3x leaks
+passed 2 test cases and 1 hidden test case, rest failed.
+in function insert, will cause AddToEnd when position is less than 0.
+Note:
+I suggest you attend the lab session and ask if unsure.
+
+Keith Tan Chee Hao
+wrong folder name
+makefile.ms failed
+in fn insert, will addtoend when position is below 0
+failed 2x hidden test case
+no submission check list 
+
+Ho Jun Hao 
+wrong folder name
+failed 2 hidden test cases
+In Function insert will AddToEnd when position below 0.
+
+Koh Joon Yee Marcus 
+makefile.gnu failed to compile, you used -ansi when using c++ code.
+makefile.ms failed to compile, no EHsc flag.
+failed 2 hidden test cases
+1xleak
+in function insert, calling MakeNode and when conditions are met will call AddToEnd.
+
+Chua Lip Ming
+good job
+100
+
+Hiyoshi Nobuaki
+1xleak
+in function insert, calling MakeNode and when conditions are met will call AddToEnd.
+failed 2 hidden test cases
+In Function insert, will AddToEnd when position below 0.
+
+Goh Rui San 
+no makefile.ms
+additional file makefile.microsoft.
+In Function insert, will cause infinite loop when position less than 0.
+failed 2 hidden test cases.
+
+Melvin Jong
+assignment number in brief is for the lab number
+failed 2 hidden test cases
+In Function insert, will cause infinite loop when position less than 0.
+
+Eu Shee Kei
+good job
+In function Insert, should do AddToFront when position is less than 0, but good that you thought of that possibility.
+
+tengyen.khoo
+no submission checklist
+no file header
+failed 2 hidden test cases
+In function Insert, will have segmentation fault when position is less than 0.
+
+Choong Xue Ting 
+Failed 2 hidden test cases.
+In function Insert, when position is less than 0 will result in an infinite loop, since List->next = List which would result infinitely in printlist.
+
+Kwek Yan Hong
+Failed 2 hidden test cases.
+In function Insert, will AddToEnd when position is less than 0.
+Note:
+when the function parameter is integer and not unsigned int, have to take into account negative numbers.
