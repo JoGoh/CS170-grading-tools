@@ -1,6 +1,0 @@
-NOTE for lab 2:
-memory leak
-makefile executable
-using NULL for ptr instead of nullptr
-failling to compile on ms 
-redundant code
